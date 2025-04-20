@@ -1,6 +1,7 @@
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { FaIndustry, FaSnowflake, FaWind, FaTools, FaFire, FaWrench, FaChartLine } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function MechanicalServices() {
   const mechanicalServices = [
@@ -160,7 +161,12 @@ export default function MechanicalServices() {
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
               Contact us today to discuss your mechanical, air conditioning, or ventilation requirements.
             </p>
-            <a href="/contact" className="btn-primary inline-block">Get a Quote</a>
+            <Link
+              href="/contact"
+              className="btn-primary"
+            >
+              Get Started
+            </Link>
           </div>
         </section>
       </main>

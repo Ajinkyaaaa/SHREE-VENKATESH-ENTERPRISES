@@ -104,7 +104,7 @@ export default function Home() {
                   Engineering Excellence in MEP Solutions
                 </h1>
                 <p className="text-xl md:text-2xl mb-12 text-gray-100 animate-slide-up">
-                  Delivering turnkey mechanical, electrical, and plumbing solutions for India's infrastructure.
+                  Delivering turnkey mechanical, electrical, and plumbing solutions for India&apos;s infrastructure.
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-6 animate-scale">
                   <Link href="/contact" className="btn-secondary">

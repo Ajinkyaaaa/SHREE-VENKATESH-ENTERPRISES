@@ -70,8 +70,12 @@ const projects = [
 ];
 
 export default function Projects() {
-  const [selectedCategory, setSelectedCategory] = useState('All');
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [sortBy, setSortBy] = useState('newest');
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const filteredProjects = selectedCategory === 'All' 
     ? projects 
@@ -80,24 +84,24 @@ export default function Projects() {
   return (
     <>
       <Head>
-        <title>Projects | Shree Venkatesh Enterprises</title>
-        <meta name="description" content="Explore our portfolio of successful MEP projects across commercial, industrial, healthcare, and residential sectors." />
+        <title>Our Projects | Shree Venkatesh Enterprises</title>
+        <meta name="description" content="Explore our portfolio of successful MEP projects across various sectors including commercial, industrial, and residential developments." />
       </Head>
 
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen flex flex-col">
         <Header />
         
-        <main className="pt-20">
+        <main className="flex-grow">
           {/* Hero Section */}
-          <section className="relative bg-primary text-white py-24">
-            <div className="absolute inset-0 bg-black opacity-10"></div>
+          <section className="relative bg-gradient-to-r from-primary to-primary-dark text-white py-20">
+            <div className="absolute inset-0 bg-black/10"></div>
             <div className="container relative z-10">
               <div className="max-w-4xl mx-auto text-center">
-                <h1 className="text-4xl md:text-5xl font-bold mb-6 border-b-3 border-secondary inline-block pb-4">
-                  Our Projects
+                <h1 className="text-4xl md:text-6xl font-bold mb-6">
+                  Our Project Portfolio
                 </h1>
                 <p className="text-xl md:text-2xl text-gray-100">
-                  Delivering Excellence in MEP Solutions Across India
+                  Discover how we&apos;ve helped businesses achieve their infrastructure goals
                 </p>
               </div>
             </div>

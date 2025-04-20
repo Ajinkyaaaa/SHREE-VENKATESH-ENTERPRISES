@@ -1,7 +1,8 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Image from 'next/image';
-import { FaCheckCircle, FaBuilding, FaTools, FaCog, FaUsers, FaEye, FaFlag, FaBullseye, FaHandshake } from 'react-icons/fa';
+import { FaCheckCircle, FaBuilding, FaTools, FaCog, FaUsers, FaEye, FaFlag, FaBullseye, FaHandshake, FaChartLine } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function About() {
   const services = [
@@ -188,7 +189,12 @@ export default function About() {
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
               Contact us today to discuss your MEP requirements and get a customized solution for your infrastructure needs.
             </p>
-            <a href="/contact" className="btn-primary inline-block">Get in Touch</a>
+            <Link
+              href="/contact"
+              className="btn-primary"
+            >
+              Get Started
+            </Link>
           </div>
         </section>
       </main>

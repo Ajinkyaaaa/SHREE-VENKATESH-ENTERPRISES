@@ -1,6 +1,7 @@
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import { FaBolt, FaCog, FaTools, FaIndustry, FaLightbulb, FaServer, FaHardHat, FaSolarPanel, FaPaintRoller, FaBuilding } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function ElectricalServices() {
   const electricalProjects = [
@@ -184,7 +185,12 @@ export default function ElectricalServices() {
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
               Contact us today to discuss your electrical, interior, or civil requirements.
             </p>
-            <a href="/contact" className="btn-primary inline-block">Get a Quote</a>
+            <Link
+              href="/contact"
+              className="btn-primary"
+            >
+              Get Started
+            </Link>
           </div>
         </section>
       </main>

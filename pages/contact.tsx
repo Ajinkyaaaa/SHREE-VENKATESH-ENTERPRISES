@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaTools, FaShoppingCart } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaTools, FaShoppingCart } from 'react-icons/fa';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
