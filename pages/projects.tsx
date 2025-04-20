@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
 
 const projects = [
@@ -77,9 +78,11 @@ export default function Projects() {
                 {projects.map((project, index) => (
                   <div key={index} className="card card-hover">
                     <div className="aspect-w-16 aspect-h-9 mb-6">
-                      <img
+                      <Image
                         src={project.image}
                         alt={project.title}
+                        width={800}
+                        height={450}
                         className="object-cover rounded-lg"
                       />
                     </div>

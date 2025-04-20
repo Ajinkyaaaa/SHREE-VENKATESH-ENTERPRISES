@@ -154,7 +154,20 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="text-center mt-12">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                {projects.map((project, index) => (
+                  <div key={index} className="card card-hover">
+                    <h3 className="text-xl font-bold mb-3">{project.title}</h3>
+                    <p className="text-gray-600 mb-4">{project.description}</p>
+                    <div className="flex justify-between text-sm text-gray-500">
+                      <span>{project.location}</span>
+                      <span>{project.duration}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="text-center">
                 <Link 
                   href="/projects" 
                   className="inline-block bg-primary hover:bg-blue-700 text-white px-8 py-3 rounded-md text-lg font-medium transition-colors"
