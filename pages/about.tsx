@@ -1,7 +1,8 @@
+import Head from 'next/head';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Image from 'next/image';
-import { FaCheckCircle, FaBuilding, FaTools, FaCog, FaUsers, FaEye, FaFlag, FaBullseye, FaHandshake, FaChartLine } from 'react-icons/fa';
+import { FaCheckCircle, FaBuilding, FaTools, FaUsers, FaEye, FaFlag, FaBullseye, FaHandshake } from 'react-icons/fa';
 import Link from 'next/link';
 
 export default function About() {
@@ -26,14 +27,14 @@ export default function About() {
   const visionPoints = [
     "To be pioneer into MEP Industry.",
     "To meet the ever-growing commercial demand for practical experience and professional expertise within this sector.",
-    "To achieve the recognition and status of being INDIA's preferred and leading building services company in our own Specialized Fields.",
-    "To give 'TURN-KEY SOLUTIONS' to the client."
+    "To achieve the recognition and status of being INDIA&apos;s preferred and leading building services company in our own Specialized Fields.",
+    "To give &apos;TURN-KEY SOLUTIONS&apos; to the client."
   ];
 
   const missionPoints = [
-    "Guided by our vision we shall deliver high-quality, cost-effective projects on schedule and enhance our client's satisfaction through continuous improvement of our business practices in terms of safety, quality, service delivery as well as sound environmental awareness policies.",
+    "Guided by our vision we shall deliver high-quality, cost-effective projects on schedule and enhance our client&apos;s satisfaction through continuous improvement of our business practices in terms of safety, quality, service delivery as well as sound environmental awareness policies.",
     "To conduct Business with Honesty and Transparency.",
-    "To Retain customer's Trust and Satisfaction by serving valuable benefits."
+    "To Retain customer&apos;s Trust and Satisfaction by serving valuable benefits."
   ];
 
   return (

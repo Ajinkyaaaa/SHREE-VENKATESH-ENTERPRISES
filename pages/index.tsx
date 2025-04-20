@@ -219,20 +219,9 @@ export default function Home() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto stagger-animation">
-                {[
-                  {
-                    quote: "Shree Venkatesh Enterprises delivered our commercial complex project ahead of schedule while maintaining exceptional quality standards.",
-                    author: "Rajesh Kumar",
-                    position: "CEO, Urban Developers Ltd."
-                  },
-                  {
-                    quote: "Their technical expertise in HVAC design saved us 20% in energy costs compared to our previous facility.",
-                    author: "Priya Sharma",
-                    position: "Operations Head, Techno Industries"
-                  }
-                ].map((testimonial, index) => (
+                {testimonials.map((testimonial, index) => (
                   <div key={index} className="card">
-                    <p className="text-gray-700 italic mb-6 text-lg">"{testimonial.quote}"</p>
+                    <p className="text-gray-700 italic mb-6 text-lg">&ldquo;{testimonial.quote}&rdquo;</p>
                     <div className="flex items-center">
                       <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl">
                         {testimonial.author.charAt(0)}
